@@ -1,4 +1,11 @@
-function Configurator() {
+function Configurator({
+  color,
+  interior,
+  wheel,
+  onColorChange,
+  onInteriorChange,
+  onWheelChange,
+}) {
   const colorSwatch = [
     {
       id: 0,
@@ -35,12 +42,12 @@ function Configurator() {
   const interiorSwatch = [
     {
       id: 0,
-      name: "Dark",
+      name: "dark",
       source: "/swatch/interior/dark.png",
     },
     {
       id: 1,
-      name: "Light",
+      name: "white",
       source: "/swatch/interior/light.png",
     },
   ];
@@ -68,7 +75,7 @@ function Configurator() {
       <h1 className="text-5xl text-center font-bold mb-5">Ocean</h1>
       <h2 className="text-xl text-center font-light">Customize Your Car</h2>
 
-      {/* Color Swatch */}
+      {/* Exterior Swatch */}
       <div className="my-8">
         <h3 className="font-semibold mb-2">Exterior Color</h3>
         <div className="flex space-x-4">
@@ -76,6 +83,7 @@ function Configurator() {
             <button
               key={exterior.id}
               className="transition-transform duration-300 hover:scale-110"
+              onClick={() => onColorChange(exterior.name)}
             >
               <img src={exterior.source} alt="Color Swatch" className="w-22" />
             </button>
@@ -91,6 +99,7 @@ function Configurator() {
             <button
               key={interior.id}
               className="transition-transform duration-300 hover:scale-110"
+              onClick={() => onInteriorChange(interior.name)}
             >
               <img src={interior.source} alt="Dark" className="w-12" />
             </button>
@@ -106,6 +115,7 @@ function Configurator() {
             <button
               key={wheel.id}
               className="transition-transform duration-300 hover:scale-110 border-2"
+              onClick={() => onWheelChange(wheel.name)}
             >
               <img src={wheel.source} alt="Dark" className="w-12" />
             </button>

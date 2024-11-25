@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Fisker Ocean Configurator",
-  description: "Create your dream fisker ocean!",
+  description: "Create your personalized dream Fisker Ocean!",
 };
 
 export default function RootLayout({ children }) {

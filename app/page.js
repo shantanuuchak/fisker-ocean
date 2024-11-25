@@ -1,11 +1,9 @@
 "use client";
 
 /**
- * Home page of the website
- * This page contains the Preview, Configurator, and Pricing components
- * State: colorConfigs, pricingConfigs
+ * @description:
+ * This page is the home page of the website. It displays the header, preview, and configurator components.
  */
-
 import { useState } from "react";
 import Header from "./components/Header";
 import Preview from "./components/Preview";
@@ -18,6 +16,27 @@ function Home() {
     wheel: "AeroStealth",
   });
 
+  function handleColorChange(color) {
+    setColorConfigs((prevState) => ({
+      ...prevState,
+      color: color,
+    }));
+  }
+
+  function handleInteriorChange(interior) {
+    setColorConfigs((prevState) => ({
+      ...prevState,
+      interior: interior,
+    }));
+  }
+
+  function handleWheelChange(wheel) {
+    setColorConfigs((prevState) => ({
+      ...prevState,
+      wheel: wheel,
+    }));
+  }
+
   return (
     <>
       <Header />
@@ -26,7 +45,12 @@ function Home() {
           <Preview {...colorConfigs} />
         </section>
         <aside className="w-full md:w-1/4 pl-0 md:pl-8">
-          <Configurator />
+          <Configurator
+            {...colorConfigs}
+            onColorChange={handleColorChange}
+            onInteriorChange={handleInteriorChange}
+            onWheelChange={handleWheelChange}
+          />
         </aside>
       </main>
     </>
