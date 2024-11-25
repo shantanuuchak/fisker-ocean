@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { IconWorld } from "@tabler/icons-react";
 
 function Header() {
   return (
@@ -19,7 +18,8 @@ function Header() {
         />
 
         <a href="#" className="flex items-center gap-1 ">
-          <IconWorld /> <span className="text-sm sm:text-base">US</span>
+          {/* <IconWorld />  */}
+          <span className="text-sm sm:text-base">US</span>
         </a>
       </header>
     </div>
