@@ -19,6 +19,7 @@ function Header() {
 
         <a href="#" className="flex items-center gap-1 ">
           {/* <IconWorld />  */}
+          <Image src="globe.svg" alt="globe" width={20} height={20} />
           <span className="text-sm sm:text-base">US</span>
         </a>
       </header>
