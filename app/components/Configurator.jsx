@@ -100,7 +100,7 @@ function Configurator() {
 
       {/* Wheel */}
       <div className="my-8">
-        <h3 className="font-semibold mb-2">Interior Color</h3>
+        <h3 className="font-semibold mb-2">Wheel Options</h3>
         <div className="flex space-x-4">
           {wheels.map((wheel) => (
             <button

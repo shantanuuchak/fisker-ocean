@@ -1,0 +1,56 @@
+{
+  "Sun Soaked": {
+    "finish": "Metallic Gloss",
+    "description": "A luxurious mineral copper that radiates sophistication.",
+    "wheels": {
+      "AeroStealth": "/images/sun_soaked/aerostealth.jpg",
+      "SlipStream Black": "/images/sun_soaked/slipstream_black.jpg",
+      "Vortex": "/images/sun_soaked/vortex.jpg"
+    }
+  },
+  "Sea Grass": {
+    "finish": "Metallic Gloss",
+    "description": "A rich, dark green that captures the ocean's depth and serenity.",
+    "wheels": {
+      "AeroStealth": "/images/sea_grass/aerostealth.jpg",
+      "SlipStream Black": "/images/sea_grass/slipstream_black.jpg",
+      "Vortex": "/images/sea_grass/vortex.jpg"
+    }
+  },
+  "Black Pearl": {
+    "finish": "Metallic Gloss",
+    "description": "A mysterious, seductive black with a metallic blue shimmer.",
+    "wheels": {
+      "AeroStealth": "/images/black_pearl/aerostealth.jpg",
+      "SlipStream Black": "/images/black_pearl/slipstream_black.jpg",
+      "Vortex": "/images/black_pearl/vortex.jpg"
+    }
+  },
+  "Red Planet": {
+    "finish": "Gloss",
+    "description": "An alluring red that's captivating, brilliant, and radiant.",
+    "wheels": {
+      "AeroStealth": "/images/red_planet/aerostealth.jpg",
+      "SlipStream Black": "/images/red_planet/slipstream_black.jpg",
+      "Vortex": "/images/red_planet/vortex.jpg"
+    }
+  },
+  "Stealth Green": {
+    "finish": "Metallic Matte",
+    "description": "A deep, metallic green in a matte finish that gives a redefined, sophisticated feel.",
+    "wheels": {
+      "AeroStealth": "/images/stealth_green/aerostealth.jpg",
+      "SlipStream Black": "/images/stealth_green/slipstream_black.jpg",
+      "Vortex": "/images/stealth_green/vortex.jpg"
+    }
+  },
+  "Blue Planet": {
+    "finish": "Metallic Gloss",
+    "description": "A brilliant, vibrant blue that glistens like ocean water.",
+    "wheels": {
+      "AeroStealth": "/images/blue_planet/aerostealth.jpg",
+      "SlipStream Black": "/images/blue_planet/slipstream_black.jpg",
+      "Vortex": "/images/blue_planet/vortex.jpg"
+    }
+  }
+}
