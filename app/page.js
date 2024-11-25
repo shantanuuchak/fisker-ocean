@@ -11,8 +11,8 @@ import Configurator from "./components/Configurator";
 
 function Home() {
   const [colorConfigs, setColorConfigs] = useState({
-    color: "Red Planet",
-    interior: "white",
+    color: "Black Pearl",
+    interior: "dark",
     wheel: "AeroStealth",
   });
 

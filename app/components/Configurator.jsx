@@ -72,7 +72,7 @@ function Configurator({
 
   return (
     <div>
-      <h1 className="text-5xl text-center font-bold mb-5">Ocean</h1>
+      <h1 className="text-5xl text-center font-bold mb-5">Fisker Ocean</h1>
       <h2 className="text-xl text-center font-light">Customize Your Car</h2>
 
       {/* Exterior Swatch */}
@@ -82,7 +82,9 @@ function Configurator({
           {colorSwatch.map((exterior) => (
             <button
               key={exterior.id}
-              className="transition-transform duration-300 hover:scale-110"
+              className={`transition-transform duration-300 hover:scale-110 ${
+                exterior.name === color ? "outline rounded-full" : ""
+              }`}
               onClick={() => onColorChange(exterior.name)}
             >
               <img src={exterior.source} alt="Color Swatch" className="w-22" />
@@ -114,7 +116,9 @@ function Configurator({
           {wheels.map((wheel) => (
             <button
               key={wheel.id}
-              className="transition-transform duration-300 hover:scale-110 border-2"
+              className={`transition-transform duration-300 hover:scale-110 border-2 ${
+                wheel.name === wheel ? "outline rounded-full" : ""
+              }`}
               onClick={() => onWheelChange(wheel.name)}
             >
               <img src={wheel.source} alt="Dark" className="w-12" />
