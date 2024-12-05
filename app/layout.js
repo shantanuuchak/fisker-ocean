@@ -1,8 +1,9 @@
-import "./globals.css";
+import "./global.css";
 
 export const metadata = {
-  title: "Fisker Ocean Configurator",
-  description: "Create your personalized dream Fisker Ocean!",
+  title: "Fisker Ocean",
+  description: "Create your personalized dream fisker now!",
+  keywords: "fisker, ocean, nextjs, tailwind, configurator",
 };
 
 export default function RootLayout({ children }) {
@@ -10,8 +11,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link
+          href="https://cdn.jsdelivr.net/npm/@qpokychuk/gilroy@1.0.2/index.min.css"
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css"
         />
       </head>
       <body>{children}</body>

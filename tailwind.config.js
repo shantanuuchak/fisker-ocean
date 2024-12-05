@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["HK Grotesk", "sans-serif"],
+        sans: ["Gilroy", "sans-serif"],
       },
     },
   },
