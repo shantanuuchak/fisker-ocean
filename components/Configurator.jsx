@@ -4,32 +4,32 @@ function Configurator({ color, interior, wheel, updateOptions }) {
     {
       id: 0,
       name: "Sun Soaked",
-      src: "/swatch/sun_soaked.png",
+      src: "/swatch/sun_soaked.webp",
     },
     {
       id: 1,
       name: "Sea Grass",
-      src: "/swatch/sea_grass.png",
+      src: "/swatch/sea_grass.webp",
     },
     {
       id: 2,
       name: "Black Pearl",
-      src: "/swatch/black_pearl.png",
+      src: "/swatch/black_pearl.webp",
     },
     {
       id: 3,
       name: "Red Planet",
-      src: "/swatch/red_planet.png",
+      src: "/swatch/red_planet.webp",
     },
     {
       id: 4,
       name: "Stealth Green",
-      src: "/swatch/stealth_green.png",
+      src: "/swatch/stealth_green.webp",
     },
     {
       id: 5,
       name: "Blue Planet",
-      src: "/swatch/blue_planet.png",
+      src: "/swatch/blue_planet.webp",
     },
   ];
 
@@ -37,12 +37,12 @@ function Configurator({ color, interior, wheel, updateOptions }) {
     {
       id: 0,
       name: "dark",
-      src: "/swatch/interior/dark.png",
+      src: "/swatch/interior/dark.webp",
     },
     {
       id: 1,
       name: "white",
-      src: "/swatch/interior/light.png",
+      src: "/swatch/interior/light.webp",
     },
   ];
 
