@@ -17,8 +17,12 @@ function HomePage() {
     setActiveOptions(newOptions);
   }
 
+  function disableContextMenu(e) {
+    e.preventDefault();
+  }
+
   return (
-    <>
+    <div onContextMenu={disableContextMenu}>
       <Header />
       <main className="flex flex-col sm:flex-row sm:gap-3 justify-between md:gap-8 px-2 md:px-8 py-3 md:py-6">
         <section className="w-full md:w-3/4">
@@ -28,7 +32,7 @@ function HomePage() {
           <Configurator updateOptions={updateOptions} {...activeOptions} />
         </aside>
       </main>
-    </>
+    </div>
   );
 }
 export default HomePage;

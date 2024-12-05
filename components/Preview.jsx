@@ -18,8 +18,8 @@ function Preview({
         src={configs[color].wheels[wheel]}
         width="0"
         height="0"
-        sizes="100vw"
-        className="w-full h-auto rounded-lg"
+        sizes="100%"
+        className="w-full h-96 sm:h-[500px] rounded-lg object-cover"
         alt="Aerostealth"
       />
       {/* Description */}
