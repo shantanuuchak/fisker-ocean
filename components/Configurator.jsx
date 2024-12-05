@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Configurator({ color, interior, wheel, updateOptions }) {
   console.log(color, interior, wheel);
   const exteriorSwatch = [
@@ -89,7 +91,14 @@ function Configurator({ color, interior, wheel, updateOptions }) {
                   : ""
               }`}
             >
-              <img src={colorObj.src} alt="Black Pearl" className="w-12" />
+              <Image
+                height="0"
+                width="0"
+                sizes="100%"
+                src={colorObj.src}
+                alt="Black Pearl"
+                className="w-12"
+              />
             </button>
           ))}
         </div>
@@ -109,7 +118,14 @@ function Configurator({ color, interior, wheel, updateOptions }) {
                   : ""
               }`}
             >
-              <img src={colorObj.src} alt="Black Pearl" className="w-14" />
+              <Image
+                height="0"
+                width="0"
+                sizes="100%"
+                src={colorObj.src}
+                alt="Black Pearl"
+                className="w-14"
+              />
             </button>
           ))}
         </div>
@@ -127,7 +143,14 @@ function Configurator({ color, interior, wheel, updateOptions }) {
                 wheelObj.name === wheel ? "border-2 border-blue-300" : ""
               }`}
             >
-              <img src={wheelObj.src} alt="Black Pearl" className="w-16" />
+              <Image
+                height="0"
+                width="0"
+                sizes="100%"
+                src={wheelObj.src}
+                alt="Black Pearl"
+                className="w-16"
+              />
             </button>
           ))}
         </div>
